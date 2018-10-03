@@ -9,10 +9,11 @@ typedef struct
 
 typedef struct
 {
+    char     **data;
     position a;
     position b;
-    int      x;
-    int      y;
+    int      height;
+    int      width;
 }       map;
 
 #endif
