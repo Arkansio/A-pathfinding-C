@@ -5,7 +5,7 @@ int     main(int argc, char **argv)
 {
     if (argc == 2)
     {
-        loadMap("test");
+        loadMap(&argv[1]);
     }
     else
     {

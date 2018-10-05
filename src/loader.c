@@ -1,8 +1,18 @@
 #include <functions.h>
 
-map     loadMap(char **path)
+int     loadMap(const char **path)
 {
-    map ourMap;
-    
-    printf("Hello world!");
+   FILE *fp;
+   int c;
+
+   fp = fopen(*path,"r");
+   while(1) {
+      c = fgetc(fp);
+      if( feof(fp) ) {
+         break;
+      }
+      printf("%c", c); 
+   }
+   fclose(fp);
+   return(0);
 }
